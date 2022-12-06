@@ -9,10 +9,12 @@ public class Main {
     public static void main(String[] args) {
         try {
             String filepath = "./src/main/resources/spam.txt";
+            String message = "WINNER!! Hey I request reward";
+
             BayesClassifier bayesClassifier = new BayesClassifier();
             bayesClassifier.setAlpha(1);
             bayesClassifier.setTrainingSet(new TrainingSet(filepath));
-            bayesClassifier.runClassifier(List.of("WINNER!! Hey I request reward".split(" ")));
+            bayesClassifier.predict(List.of(message.split(" ")));
         } catch (MyException e) {
             System.out.println("Exception (" + e.getCode() + "): " + e.getMessage());
         }

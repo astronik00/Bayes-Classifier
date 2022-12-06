@@ -42,7 +42,7 @@ public class BayesClassifier {
                 .reduce(0.0, Double::sum);
     }
 
-    public void runClassifier(List <String> message) {
+    public void predict(List <String> message) {
         System.out.println(
                 "Ham with " + getHamProbability(message) + " probability" +
                 "\nSpam with " + getSpamProbability(message) + " probability");

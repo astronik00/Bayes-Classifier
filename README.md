@@ -11,7 +11,7 @@ Because of the small values, it is easier to work with logarithms by converting 
 $$P(Q_k | x) = \log{P(Q_k)} + \sum\limits_{i = 1}^n \log{P(x_i|Q_k)}.$$
 
 # How to run
-You can find file with training set [spam.txt](NBC/src/main/resources/spam.txt) by in resources folder. Used data can be found [here](https://github.com/stedy/Machine-Learning-with-R-datasets). All data should consist of two fields: type and message, diveded by **'\t'**.  
+You can find file with training set [spam.txt](NBC/src/main/resources/spam.txt) in resources folder. Used data can be found [here](https://github.com/stedy/Machine-Learning-with-R-datasets). All data should consist of two fields: type and message, diveded by **'\t'**.  
 
 In Main file you can change filepath of training set and message variable to classify.
 
